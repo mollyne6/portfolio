@@ -8,7 +8,7 @@ export const profile = {
   location: 'Siaya, Kenya',
   email: 'mollyneawour@gmail.com',
   emailContact: 'hello@mollyne.design',
-  cvLink: '/cv.html',
+  cvLink: 'cv.html',
 }
 
 export const socialLinks = [
@@ -64,7 +64,7 @@ export const projects = [
     description:
       'A web platform supporting digital literacy training and community technology access at the Siaya Community Digital Hub.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    links: { view: '/community-digital-hub-portal.html', source: '/community-digital-hub-portal.html' },
+    links: { view: 'community-digital-hub-portal.html', source: 'community-digital-hub-portal.html' },
   },
   {
     id: '2',
@@ -73,7 +73,7 @@ export const projects = [
     description:
       'Reimagined a premium storefront for a beauty and lifestyle brand, improving product discovery and purchase experience.',
     technologies: ['React', 'JavaScript', 'CSS'],
-    links: { view: '/aster-co.html', source: '/aster-co.html' },
+    links: { view: 'aster-co.html', source: 'aster-co.html' },
   },
   {
     id: '3',
@@ -82,7 +82,7 @@ export const projects = [
     description:
       'A financial reporting dashboard for teams to track performance, analyse trends, and make faster decisions.',
     technologies: ['React', 'JavaScript'],
-    links: { view: '/northstar-finance.html', source: '/northstar-finance.html' },
+    links: { view: 'northstar-finance.html', source: 'northstar-finance.html' },
   },
 ]
 
@@ -104,7 +104,7 @@ export const spotlight = {
       title: 'Curriculum Vitae',
       meta: 'PDF · 1 page · 248 KB',
       actionLabel: 'Open CV attachment',
-      href: '/cv.html',
+      href: 'cv.html',
       color: '#ff007f',
       icon: 'document',
     },
@@ -112,7 +112,7 @@ export const spotlight = {
       title: 'Digital Literacy',
       meta: 'Community training & access',
       actionLabel: 'Open page',
-      href: '/digital-literacy.html',
+      href: 'digital-literacy.html',
       color: '#34d399',
       icon: 'users',
     },
@@ -120,7 +120,7 @@ export const spotlight = {
       title: 'Web Prototyping',
       meta: 'UI design & interfaces',
       actionLabel: 'Open page',
-      href: '/web-prototyping.html',
+      href: 'web-prototyping.html',
       color: '#8b5cf6',
       icon: 'layout',
     },
@@ -128,7 +128,7 @@ export const spotlight = {
       title: 'Network Troubleshooting',
       meta: 'Configuration & maintenance',
       actionLabel: 'Open page',
-      href: '/network-troubleshooting.html',
+      href: 'network-troubleshooting.html',
       color: '#f59e0b',
       icon: 'network',
     },
