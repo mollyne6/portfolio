@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Literacy | Mollyne Awour</title>
+    <style>
+      :root {
+        --bg: #060b16;
+        --panel: rgba(15, 23, 42, 0.9);
+        --panel-soft: rgba(15, 23, 42, 0.68);
+        --line: rgba(148, 163, 184, 0.14);
+        --text: #f8fafc;
+        --muted: #cbd5e1;
+        --soft: #94a3b8;
+        --accent: #34d399;
+        --accent-soft: rgba(52, 211, 153, 0.14);
+        --purple: #8b5cf6;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(180deg, #050816, #0b1220 100%);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 48px auto;
+        padding: 0 20px 40px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(2, 6, 23, 0.5);
+      }
+
+      .header {
+        padding: 38px 32px 28px;
+        background: linear-gradient(135deg, rgba(52, 211, 153, 0.18), rgba(139, 92, 246, 0.12));
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        color: #a7f3d0;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 12px 0 8px;
+        font-size: clamp(2.2rem, 4vw, 3.3rem);
+        letter-spacing: -0.06em;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 1.03rem;
+      }
+
+      .content {
+        padding: 30px 32px 38px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 24px;
+      }
+
+      .panel {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 1.05rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #bbf7d0;
+      }
+
+      p, li {
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .tag {
+        background: var(--accent-soft);
+        border: 1px solid rgba(52, 211, 153, 0.3);
+        color: #d1fae5;
+        border-radius: 999px;
+        padding: 7px 12px;
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+
+      .actions {
+        margin-top: 22px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 18px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), #6ee7b7);
+        color: #04130d;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .btn.secondary {
+        background: transparent;
+        border: 1px solid var(--line);
+        color: var(--text);
+      }
+
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+        .header, .content { padding-left: 22px; padding-right: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="card">
+        <header class="header">
+          <div class="eyebrow">Attachment Focus</div>
+          <h1>Digital Literacy</h1>
+          <div class="subtitle">Community training, digital inclusion, and practical technology access.</div>
+        </header>
+
+        <main class="content">
+          <div class="grid">
+            <section class="panel">
+              <h2>Overview</h2>
+              <p>
+                My digital literacy work centers on helping people build confidence in using everyday digital tools,
+                understanding online systems, and accessing services more effectively. I enjoy making technology feel approachable,
+                especially for learners who are beginning to explore the digital world.
+              </p>
+              <p>
+                This work connects strongly with my broader goal of improving digital access in communities and helping others use technology to solve real challenges.
+              </p>
+            </section>
+
+            <aside class="panel">
+              <h2>Core Skills</h2>
+              <div class="tag-list">
+                <span class="tag">Community training</span>
+                <span class="tag">Digital access</span>
+                <span class="tag">Basic IT support</span>
+                <span class="tag">User guidance</span>
+                <span class="tag">Technology awareness</span>
+              </div>
+            </aside>
+          </div>
+
+          <div class="grid" style="margin-top: 24px;">
+            <section class="panel">
+              <h2>What I Support</h2>
+              <ul>
+                <li>Helping learners navigate computers, mobile devices, and common digital applications.</li>
+                <li>Teaching digital communication, productivity, and online safety fundamentals.</li>
+                <li>Simplifying technology concepts for beginners and community users.</li>
+                <li>Supporting digital inclusion through practical and approachable guidance.</li>
+              </ul>
+            </section>
+
+            <section class="panel">
+              <h2>Impact</h2>
+              <p>
+                By improving digital confidence, learners become better prepared for education, online opportunities, and participation in modern community services.
+              </p>
+            </section>
+          </div>
+
+          <div class="actions">
+            <a class="btn" href="/index.html">Back to portfolio</a>
+            <a class="btn secondary" href="/cv.html">View CV</a>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

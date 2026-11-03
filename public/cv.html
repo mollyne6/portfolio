@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mollyne Awour | CV</title>
+  <style>
+    :root {
+      --bg: #0a0e17;
+      --panel: #101827;
+      --panel-soft: #172033;
+      --line: rgba(255,255,255,0.08);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #ff007f;
+      --primary-soft: rgba(255, 0, 127, 0.14);
+      --green: #10b981;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #0a0e17 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 40px auto;
+      background: rgba(16, 24, 39, 0.9);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    }
+
+    .header {
+      background: linear-gradient(135deg, rgba(255,0,127,0.2), rgba(168,85,247,0.14));
+      border-bottom: 1px solid var(--line);
+      padding: 32px 40px 26px;
+    }
+
+    .head-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .avatar {
+      width: 70px; height: 70px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), #a855f7);
+      font-weight: 800;
+      font-size: 2rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.05em;
+    }
+
+    .title {
+      font-size: 1.08rem;
+      color: #f9d7ea;
+      margin-top: 6px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .summary-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .content {
+      padding: 28px 40px 40px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.08rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #f9d7ea;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      background: var(--primary-soft);
+      border: 1px solid rgba(255,0,127,0.32);
+      color: #fce7f3;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.82rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .job {
+      border-left: 2px solid rgba(255,0,127,0.5);
+      padding-left: 16px;
+      margin-left: 8px;
+    }
+
+    .job strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .job small {
+      color: #f9d7ea;
+      display: block;
+      margin-top: 4px;
+    }
+
+    .job p {
+      margin: 8px 0 0;
+    }
+
+    .action {
+      margin-top: 22px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .download {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), #ff66b3);
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      box-shadow: 0 10px 22px rgba(255, 0, 127, 0.3);
+    }
+
+    @media (max-width: 760px) {
+      .content { grid-template-columns: 1fr; }
+      .summary { grid-template-columns: 1fr; }
+      .header, .content { padding-left: 22px; padding-right: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="head-top">
+        <div>
+          <h1>Mollyne Awour</h1>
+          <div class="title">ICT Student | Front-End Web Developer | Community Tech Advocate</div>
+        </div>
+        <div class="avatar">M</div>
+      </div>
+
+      <div class="summary">
+        <div class="summary-box">
+          <span class="label">Location</span>
+          Siaya, Kenya
+        </div>
+        <div class="summary-box">
+          <span class="label">Email</span>
+          mollyneawour@gmail.com
+        </div>
+        <div class="summary-box">
+          <span class="label">Focus</span>
+          Digital literacy & web technology
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div>
+        <section class="card">
+          <h2>Profile</h2>
+          <p>
+            I am an ambitious ICT student currently undertaking industrial attachment at the Siaya Community Digital Hub.
+            I am passionate about building modern web experiences, improving digital access in communities, and supporting
+            efficient ICT services through practical problem solving.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Core Experience</h2>
+          <div class="timeline">
+            <div class="job">
+              <strong>Industrial Attachment – Siaya Community Digital Hub</strong>
+              <small>2024 — Present</small>
+              <p>Support digital literacy training, assist with network troubleshooting, and contribute to front-end web development initiatives.</p>
+            </div>
+            <div class="job">
+              <strong>ICT Student – Bondo Technical Training Institute</strong>
+              <small>2025 — Present</small>
+              <p>Developing practical knowledge in computer operations, software systems, troubleshooting, web design, and technology support.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section class="card">
+          <h2>Skills</h2>
+          <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Hardware Support</span>
+            <span class="skill-tag">Network Troubleshooting</span>
+            <span class="skill-tag">Digital Training</span>
+            <span class="skill-tag">UI Prototyping</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Key Competencies</h2>
+          <ul>
+            <li>Web development and design</li>
+            <li>Community digital literacy facilitation</li>
+            <li>Network configuration and maintenance</li>
+            <li>Technical troubleshooting and documentation</li>
+            <li>Interactive interface prototyping</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <div class="action">
+      <a class="download" href="/">Back to Portfolio</a>
+    </div>
+  </div>
+</body>
+</html>

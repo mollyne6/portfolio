@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster & Co. | Mollyne Awour</title>
+    <style>
+      :root {
+        --bg: #070b16;
+        --panel: rgba(15, 23, 42, 0.9);
+        --line: rgba(148, 163, 184, 0.14);
+        --text: #f8fafc;
+        --muted: #cbd5e1;
+        --soft: #94a3b8;
+        --accent: #8b5cf6;
+        --accent-soft: rgba(139, 92, 246, 0.16);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(180deg, #050816, #0d1220 100%);
+        color: var(--text);
+        line-height: 1.7;
+      }
+      .page { max-width: 980px; margin: 48px auto; padding: 0 20px 40px; }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(2,6,23,0.5);
+      }
+      .header {
+        padding: 38px 32px 28px;
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.18), rgba(168, 85, 247, 0.08));
+        border-bottom: 1px solid var(--line);
+      }
+      .eyebrow {
+        color: #ddd6fe;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        font-weight: 700;
+      }
+      h1 {
+        margin: 12px 0 8px;
+        font-size: clamp(2.2rem, 4vw, 3.3rem);
+        letter-spacing: -0.06em;
+      }
+      .subtitle { color: var(--muted); font-size: 1.03rem; }
+      .content { padding: 30px 32px 38px; }
+      .grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; }
+      .panel {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px;
+      }
+      h2 {
+        margin: 0 0 14px;
+        font-size: 1.05rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #e9d5ff;
+      }
+      p, li { color: var(--muted); }
+      ul { margin: 0; padding-left: 18px; }
+      .tag-list { display: flex; flex-wrap: wrap; gap: 10px; }
+      .tag {
+        background: var(--accent-soft);
+        border: 1px solid rgba(139, 92, 246, 0.3);
+        color: #e9d5ff;
+        border-radius: 999px;
+        padding: 7px 12px;
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+      .actions {
+        margin-top: 22px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 18px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), #c084fc);
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .btn.secondary {
+        background: transparent;
+        border: 1px solid var(--line);
+        color: var(--text);
+      }
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+        .header, .content { padding-left: 22px; padding-right: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="card">
+        <header class="header">
+          <div class="eyebrow">Brand Experience</div>
+          <h1>Aster &amp; Co.</h1>
+          <div class="subtitle">A reimagined luxury storefront experience focused on elegance, discovery, and ease of shopping.</div>
+        </header>
+
+        <main class="content">
+          <div class="grid">
+            <section class="panel">
+              <h2>Project Goal</h2>
+              <p>
+                Aster &amp; Co. was designed as a premium beauty and lifestyle storefront. The objective was to create a refined shopping experience that feels aspirational while staying easy to use.
+              </p>
+              <p>
+                The concept focuses on product presentation, visual storytelling, and a smooth browsing experience that makes it easier for customers to find what they are looking for.
+              </p>
+            </section>
+
+            <aside class="panel">
+              <h2>Tech Stack</h2>
+              <div class="tag-list">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS</span>
+              </div>
+            </aside>
+          </div>
+
+          <div class="grid" style="margin-top: 24px;">
+            <section class="panel">
+              <h2>What Was Improved</h2>
+              <ul>
+                <li>Luxury-inspired visual direction tailored to beauty and lifestyle branding.</li>
+                <li>Simplified product discovery and stronger browsing flow.</li>
+                <li>Modern layout structure to improve presentation and readability.</li>
+                <li>User-focused interface elements that support easier navigation.</li>
+              </ul>
+            </section>
+
+            <section class="panel">
+              <h2>Outcome</h2>
+              <p>
+                The concept supports a stronger digital storefront identity and demonstrates how thoughtful design can elevate the customer experience for a premium brand.
+              </p>
+            </section>
+          </div>
+
+          <div class="actions">
+            <a class="btn" href="/index.html">Back to portfolio</a>
+            <a class="btn secondary" href="/cv.html">View CV</a>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
